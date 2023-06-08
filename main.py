@@ -6,3 +6,7 @@ def trace(*args):
 pokemonlist = ["bulbasaur", "charmander", "squirtle", "caterpie", "butterfree", "weedle", "pidgey", "rattata", "spearow", "ekans", "pikachu", "sandshrew", "nidoran", "vulpix", "jigglypuff"]
 
 print("Welcome to the Pokemon API!\n")
+
+name = ""
+while(name != "q"):
+  name = input("Type a pokemon name or type r for a random pokemon to learn about (q = quit): ")
