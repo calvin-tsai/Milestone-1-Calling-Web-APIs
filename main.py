@@ -21,5 +21,4 @@ while(name != "q"):
 
   data = response.json() 
   print(f"pokemon id: {data['id']}\nbase experience: {data['id']}\nability: {data['abilities'][0]['ability']['name']}\nheld item: {data['held_items'][0]['item']['name']}\n")
-
-print("Thank you!")
+  
