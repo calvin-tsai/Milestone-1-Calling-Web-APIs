@@ -13,3 +13,7 @@ while(name != "q"):
   if(name == "r"):
     name = random.choice(pokemonlist)
     print(f"Your pokemon is {name}.")
+
+  URL = f"https://pokeapi.co/api/v2/pokemon/{name}"
+  trace ("Calling", URL)
+  response = requests.get(URL)
