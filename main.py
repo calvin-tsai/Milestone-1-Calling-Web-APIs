@@ -18,3 +18,6 @@ while(name != "q"):
   trace ("Calling", URL)
   response = requests.get(URL)
   response.raise_for_status()  
+
+  data = response.json() 
+  print(f"pokemon id: {data['id']}\nbase experience: {data['id']}\nability: {data['abilities'][0]['ability']['name']}\nheld item: {data['held_items'][0]['item']['name']}\n")
