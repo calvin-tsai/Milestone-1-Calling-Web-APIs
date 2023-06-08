@@ -17,3 +17,4 @@ while(name != "q"):
   URL = f"https://pokeapi.co/api/v2/pokemon/{name}"
   trace ("Calling", URL)
   response = requests.get(URL)
+  response.raise_for_status()  
